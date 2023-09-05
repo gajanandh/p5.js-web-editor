@@ -299,7 +299,7 @@ class SketchListRowBase extends React.Component {
           <input
             value={renameValue}
             onChange={this.handleRenameChange}
-            onKeyUp={this.handleRenameEnter}
+            onKeyDown={this.handleRenameEnter}
             onBlur={this.handleRenameBlur}
             onClick={(e) => e.stopPropagation()}
             ref={this.renameInput}
